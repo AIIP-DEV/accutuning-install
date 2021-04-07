@@ -22,10 +22,12 @@
 ## 작업 순서 
 
 ### 1. docker와 docker-compose가 설치되어 있는지 확인합니다. 
+* docker -v, docker-compose -v 명령어를 실행합니다. 
     ```shell
     docker -v
     docker-compose -v
     ```
+    
 * 설치되어 있을 경우 아래 그림처럼 docker와 docker-compose의 버전을 확인할 수 있습니다. 
     ![docker -v](./images/docker_v.png)
 
@@ -53,13 +55,15 @@
 
     ![docker images](./images/docker_images.png)
 ### 4. docker-compose로 구동합니다. 
+* docker-compose up -d 로 컨테이너를 구동합니다. 
+* 반드시 docker-compose.yml이 있는 폴더에서 실행하셔야 합니다. 
     ```shell
     docker-compose up -d
     ```
 
 ### 5. license를 등록합니다. 
-* browser를 여시고, http://<YOUR-IP-ADDRESS>:8000/ 로 접속하세요.
-* <YOUR-IP-ADDRESS> 부분에는 accutuning을 설치한 서버의 아이피를 넣으시면 됩니다. 
+* browser를 여시고, http://< YOUR-IP-ADDRESS >:8000/ 로 접속하세요.
+* < YOUR-IP-ADDRESS > 부분에는 accutuning을 설치한 서버의 아이피를 넣으시면 됩니다. 
 * 첫 화면에서 아래 그림처럼 license 파일이 없다고 나올 겁니다. 
     ![main_license없음](./images/license_req_main.png)
 
@@ -72,18 +76,21 @@
 
 ## Accu.Tuning 구동 및 정지
 ### 구동
+* accutuning을 구동합니다. 
     ```shell
     # docker-compose.yml이 있는 폴더에서 실행합니다. 
     docker-compose up -d
     ```
 
 ### 정지
+* 구동된 accutuning을 정지합니다. 
     ```shell
     # docker-compose.yml이 있는 폴더에서 실행합니다. 
     docker-compose down
     ```
 
 ### 서버 구동여부 확인
+* 현재 accutuning이 구동중인지 알아봅니다. 
     ```shell
     # docker-compose.yml이 있는 폴더에서 실행합니다. 
     docker-compose ps
