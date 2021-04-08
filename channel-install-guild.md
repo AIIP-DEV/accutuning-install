@@ -70,8 +70,13 @@
 * check it out 부분을 클릭하시면 아래 그림처럼 license key를 입력하는 창이 나옵니다. 따로 전달받으신 license key를 입력하시고 SAVE 버튼을 누르세요. 
     ![license_입력화면](./images/license_input.png)
 
+* 아래 이미지처럼 입력하고 저장하면 SAVE 버튼 위에 "Valid license code until YYYY-MM-DD" 형태의 메시지로, 라이센스가 유효한 날짜를 확인할 수 있습니다. 
+    ![license_입력완료](./images/license_input_ok.png)
+
+* 다시 메인화면으로 이동하면 license가 없다는 메시지가 사라졌을 겁니다. 그대로 사용하시면 됩니다. 
+    ![메인화면](./images/main.png)
 ### 6. 접속하셔서 사용하시면 됩니다. 
-* license가 없다는 메시지가 사라졌을 겁니다. 그대로 사용하시면 됩니다. 
+
 * 다시 접속시 browser를 여시고, http://<YOUR-IP-ADDRESS>:8000/ 로 접속하세요. 
 
 ## Accu.Tuning 구동 및 정지
