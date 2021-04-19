@@ -1,0 +1,21 @@
+version: "2.0"
+services:
+    app:
+        image: accutuning:latest
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock  # container상태조회를 위해 필요하다.
+            - ./.WORKSPACE_PROD:/workspace
+        environment:
+            - ACCUTUNING_DEBUG=0
+            - ACCUTUNING_INIT=1
+            - ACCUTUNING_AUTH=0
+            - ACCUTUNING_NOTEBOOK=0
+            - ACCUTUNING_DB_ENGINE=sqlite
+            - ACCUTUNING_K8S_USE=0
+            - ACCUTUNING_K8S_VOLUME_MOUNT_PATH=${PWD}/.WORKSPACE_PROD
+            - ACCUTUNING_CELERY_ONLY=0
+            - ACCUTUNING_CELERY=1
+            - ACCUTUNING_CELERY_BROKER=amqp://localhost:5672/
+            - DJANGO_SETTINGS_MODULE=accutuning.settings_channel
+        ports:
+            - "8000:8000"
