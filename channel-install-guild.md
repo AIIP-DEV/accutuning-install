@@ -61,13 +61,17 @@
     docker-compose up -d
     ```
 
-### 5. license를 등록합니다. 
+### 5. license key를 요청합니다. 
 * browser를 여시고, http://< YOUR-IP-ADDRESS >:8000/ 로 접속하세요.
-* < YOUR-IP-ADDRESS > 부분에는 accutuning을 설치한 서버의 아이피를 넣으시면 됩니다. 
+  * < YOUR-IP-ADDRESS > 부분에는 accutuning을 설치한 서버의 아이피를 넣으시면 됩니다. 
 * 첫 화면에서 아래 그림처럼 license 파일이 없다고 나올 겁니다. 
     ![main_license없음](./images/license_req_main.png)
 
-* check it out 부분을 클릭하시면 아래 그림처럼 license key를 입력하는 창이 나옵니다. 따로 전달받으신 license key를 입력하시고 SAVE 버튼을 누르세요. 
+* check it out 부분을 클릭하시면 아래 그림처럼 license key를 입력하는 창이 나옵니다. license 입력창 위에 파란색으로 표기된 "Your server hostname is ..." 부분을 확인하시고, 해당 hostname으로 license key를 요청해 주세요.    
+
+### 6. licence key를 등록합니다. 
+
+* 위 5번 항목의 창에서, 따로 전달받으신 license key를 입력하시고 SAVE 버튼을 누르세요. 
     ![license_입력화면](./images/license_input.png)
 
 * 아래 이미지처럼 입력하고 저장하면 SAVE 버튼 위에 "Valid license code until YYYY-MM-DD" 형태의 메시지로, 라이센스가 유효한 날짜를 확인할 수 있습니다. 
@@ -75,7 +79,7 @@
 
 * 다시 메인화면으로 이동하면 license가 없다는 메시지가 사라졌을 겁니다. 그대로 사용하시면 됩니다. 
     ![메인화면](./images/main.png)
-### 6. 접속하셔서 사용하시면 됩니다. 
+### 7. 접속하셔서 사용하시면 됩니다. 
 
 * 다시 접속시 browser를 여시고, http://<YOUR-IP-ADDRESS>:8000/ 로 접속하세요. 
 
