@@ -1,4 +1,4 @@
-# Channel 대응 install guide 
+# Docker-compose를 이용한 설치가이드
 
 ## Server Requirement (권장)
 * CPU : 8 core
