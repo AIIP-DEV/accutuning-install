@@ -1,6 +1,6 @@
 # Docker-compose를 이용한 설치가이드
 
-## Server Requirement (권장)
+## Server Requirement (권장/1인)
 * CPU : 8 core
 * Memory : 16G 
 * Disk space : 40G 이상 
