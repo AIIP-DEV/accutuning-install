@@ -1,7 +1,7 @@
 # accutuning-install
 Accutuning install guide를 제공합니다. 
 
-Install Guide : [channel-install-guide.md](./channel-install-guild.md)
+Install Guide : [channel-install-guide.md](./channel-install-guide.md)
 
 User Manual : [user-manual.md](./docs/user-manual.md)
 
