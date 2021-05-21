@@ -1,6 +1,6 @@
 # AWS Marketplace를 이용한 설치가이드 
 -----
-AWS Marketplace 상에 등록되어 있는 Accu.Tuning 이미지를 활용하여 복잡한 설정 필요 없이도 간단하게 Amazon EC2 인스턴스를 구성하여 사용할 수 있습니다. 사용 방법은 아래와 같습니다. (21' 4월 기준)
+AWS Marketplace 상에 등록되어 있는 Accu.Tuning 이미지를 활용하여 복잡한 설정 필요 없이도 간단하게 Amazon EC2 인스턴스를 구성하여 사용할 수 있습니다. 사용 방법은 아래와 같습니다. (21' 5월 기준)
 
 **AWS Marketplace 내 AccuTuning 검색 결과**
 ![accutuning_search](./images/marketplace_1.png)
@@ -24,9 +24,13 @@ AWS Marketplace 상에 등록되어 있는 Accu.Tuning 이미지를 활용하여
 ![instance_3](./images/instance_3.png)
 
 #### 5. AWS EC2 설정을 진행합니다.
-- 이미지 생성 시 인스턴스 유형은 t2.xlarge (4 cpu, 16GB) 이상으로, 넉넉한 공간 확보를 위하여 Storage는 100gb로 늘려줄 것을 권장합니다.
+- 이미지 생성 시 인스턴스 유형은 t2.xlarge (4 cpu, 16GB) 이상으로, 설정할 것을 권장합니다.
 ![aws_setting_1](./images/aws_setting_1.png)
+- 관리자에게 전달받은 VPC네트워크를 선택합니다. 폐쇄망에 설치하시는 경우 퍼블릭 IP 자동 할당에 "비화성화"를 선택합니다.
+![aws_setting_1](./images/aws_setting_1_1.png)
+- 넉넉한 공간 확보를 위하여 Storage는 100gb로 늘려줄 것을 권장합니다.
 ![aws_setting_2](./images/aws_setting_2.png)
+
 
 #### 6. SSH 접속 등이 필요한 경우 보안 그룹 설정에서 22번 포트를 추가하여 이용할 수 있습니다.
 ![aws_setting_3](./images/aws_setting_3.png)
@@ -35,9 +39,10 @@ AWS Marketplace 상에 등록되어 있는 Accu.Tuning 이미지를 활용하여
 - SSH 접속 등에 필요한 키페어를 생성하거나 기존 것을 활용하여 선택하여 진행합니다.
 ![keypair](./images/keypair.png)
 
-#### 8. 인스턴스 목록으로 돌아가 새 인스턴스 생성을 확인합니다. 접속 주소는 Public IPv4 주소 / DNS에서 확인 가능합니다. 
+#### 8. 인스턴스 목록으로 돌아가 새 인스턴스 생성을 확인합니다. 접속 주소는 퍼블릭 IPv4 주소 / DNS에서 확인 가능합니다. (폐쇄망일 경우 프라이빗 IPv4 주소 / DNS)
 - 제공되는 주소의 8000 포트로 접속하면 AccuTuning 사용 화면에 접속할 수 있습니다.
 - 스크린샷 예제의 경우 3.209.10.77:8000 혹은 http://ec2-3-209-10-77.compute-1.amazonaws.com:8000 로 접속할 수 있습니다.
+(폐쇄망일 경우, 172.31.67.154:8000 혹은 http://ip-172-31-67-154.ec2.internal)
 ![new_instance](./images/new_instance.png)
 
 #### 10. 접속 시 아래와 같이 로그인 창이  적절한 ID/PW를 입력합니다.
