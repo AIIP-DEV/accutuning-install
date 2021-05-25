@@ -30,7 +30,7 @@
 
 #### Q: S3를 통해 생성한 Experiment에서 400 Bad Request 에러가 나는 경우
 
-A: 해당 S3 버켓에 접근할 권한이 없을 때 나오는 에러 입니다. https://s3.console.aws.amazon.com/s3/buckets 접속 후 버킷명 선택 -> 권한 에서 버킷 정책을 수정한 후에 다시 시도하세요.
+A: 해당 S3 버켓에 접근할 권한이 없을 때 나오는 에러 입니다. https://s3.console.aws.amazon.com/ 접속 후 버킷명 선택 -> 권한 에서 객체 소유자가 읽기 권한이 있도록 수정한 후에 다시 시도하세요.
 
 
 
